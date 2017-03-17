@@ -1,0 +1,97 @@
+.sea_bottom {
+    position: relative;
+    margin: 2vw auto auto auto;
+    width: 70vw;
+    height: 45vw;
+    background-image: url(../img/gamefish/seabottom.jpg);
+    background-size: cover;
+}
+.example {
+    position: absolute;
+    top:85%;
+    left: 40%;
+    width: 15vw;
+    height: 5vw;
+    background-color: white;
+}
+@keyframes swim {
+    0% {
+        left: 0%;
+    }
+    50% {
+        left: 87%;
+    }
+    100% {
+        left: 0%;
+    }
+}
+
+@keyframes swimback {
+    0% {
+        left: 87%;
+    }
+    50% {
+        left: 0%;
+    }
+    100% {
+        left: 87%;
+    }
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotateY(0deg);
+    }
+    49% {
+        transform: rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(-180deg);
+    }
+    99% {
+        transform: rotateY(-180deg);
+    }
+    100% {
+        transform: rotateY(0deg);
+    }
+}
+
+.fish1 {
+    top: 2%;
+    position: absolute;
+    animation: swim 12s linear infinite, spinner 12s linear infinite;
+    width: 10vw;
+    height: 10vw;
+    background-image: url(../img/gamefish/fish1.png);
+    background-size: cover;
+}
+
+.fish2 {
+    top: 20%;
+    position: absolute;
+    animation: swimback 12s linear infinite, spinner 12s linear infinite reverse;
+    width: 8vw;
+    height: 8vw;
+    background-image: url(../img/gamefish/fish2.png);
+    background-size: cover;
+}
+
+.fish3 {
+    top: 35%;
+    position: absolute;
+    animation: swim 12s linear infinite, spinner 12s linear infinite;
+    width: 10vw;
+    height: 10vw;
+    background-image: url(../img/gamefish/fish3.png);
+    background-size: cover;
+}
+
+.fish4 {
+    top: 55%;
+    position: absolute;
+    animation: swimback 12s linear infinite, spinner 12s linear infinite reverse;
+    width: 8vw;
+    height: 8vw;
+    background-image: url(../img/gamefish/fish4.png);
+    background-size: cover;
+}

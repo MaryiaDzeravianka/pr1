@@ -1,0 +1,207 @@
+body {
+    /*background-image: url(../img/fond/bg1.jpg);*/
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.menu {
+    left: 10vw;
+    position: relative;
+    z-index: 2;
+    width: 80vw;
+}
+
+.stage {
+    position: relative;
+    width: 90vw;
+    height: 90vh;
+}
+
+.stage input {
+    display: none;
+}
+
+.fourth,
+.third,
+.second,
+.first {
+    transform: skew(30deg, 0) scale(1.2, 1);
+    position: absolute;
+    max-width: 1500px;
+    max-height: 1000px;
+    width: 42vw;
+    height: 28vw;
+    min-width: 300px;
+    min-height: 200px;
+    border: 2px solid gray;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: gray;
+    left: 28vw;
+    z-index: 1;
+    transition: 
+        height 0.6s ease,
+        width 0.6s ease,
+        left 0.6s ease,
+        top 0.6s ease,
+        transform 0.6s ease
+        /*, */
+        /*z-index 0s ease 0s*/
+        ;
+    
+}
+
+#first:checked~label div.first,
+#second:checked~label div.second,
+#third:checked~label div.third,
+#fourth:checked~label div.fourth {
+    transform: skew(0deg, 0) scale(1, 1);
+    margin: auto auto;
+    width: 78vw;
+    height: 52vw;
+    z-index: 3;
+    top: 0px;
+    left: 11vw;
+    transition: 
+        top 0.6s ease,
+        transform 0.6s ease,
+        width 0.6s ease ,
+        height 0.6s ease,
+        left 0.6s ease
+        ;
+}
+
+.first {
+    background-image: url(../img/map/first.jpg);
+    top: calc(15vw + 5vw);
+}
+
+.second {
+    background-image: url(../img/map/second.jpg);
+    top: calc(10vw + 5vw);
+}
+
+.third {
+    background-image: url(../img/map/third.jpg);
+    top: calc(5vw + 5vw);
+}
+
+.fourth {
+    background-image: url(../img/map/fourth.jpg);
+    top: calc(5vw);
+}
+
+.one_first {
+    position: relative;
+    top: -40px;
+    left: 580px;
+    background-image: url(../img/marker/first/one_blue.png);
+}
+
+.two_first {
+    background-image: url(../img/marker/first/two_blue.png);
+}
+
+.three_first {
+    background-image: url(../img/marker/first/three_blue.png);
+}
+
+.one_second {
+    background-image: url(../img/marker/second/one_blue.png);
+}
+
+.two_second {
+    background-image: url(../img/marker/second/two_blue.png);
+}
+
+.three_second {
+    background-image: url(../img/marker/second/three_blue.png);
+}
+
+.start_third {
+    background-image: url(../img/marker/third/start_black.png);
+}
+
+.number_third {
+    background-image: url(../img/marker/third/number_black.png);
+}
+
+.finish_third {
+    background-image: url(../img/marker/third/finish_black.png);
+}
+
+.start_fourth {
+    background-image: url(../img/marker/fourth/start.png);
+}
+
+.two_fourth {
+    background-image: url(../img/marker/fourth/two.png);
+}
+
+.three_fourth {
+    background-image: url(../img1/marker/fourth/three.png);
+}
+
+.finish_fourth {
+    background-image: url(../img/marker/fourth/finish.png);
+}
+
+.marker {
+    width: 8%;
+    height: 8%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: none;
+}
+
+/*.three_first:hover {*/
+/*    background-image: url(../img/marker/first/three_red.png);*/
+/*}*/
+
+
+/*label>div {
+    transition-delay: 1s;
+    transition: transform 1s ease;
+}*/
+
+#first:checked~label div.first div.one_first {
+    display: block;
+    position: relative;
+    top: 43%;
+    left: 94%;
+}
+
+#first:checked~label div.first div.two_first {
+    display: block;
+    position: relative;
+    top: 59%;
+    left: 76%;
+}
+
+#first:checked~label div.first div.three_first {
+    display: block;
+    position: relative;
+    top: 39%;
+    left: 30%;
+}
+
+
+
+.cross {
+    width: 80px;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/marker/cross.png);
+}
+
+#first:checked~label div.first label div.cross,
+#second:checked~label div.second label div.cross,
+#third:checked~label div.third label div.cross,
+#fourth:checked~label div.fourth label div.cross {
+    display: block;
+    position: relative;
+    top: 2%;
+    left: 89%;
+    width: 12%;
+    height: 12%;
+}
