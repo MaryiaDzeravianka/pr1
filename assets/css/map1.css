@@ -1,31 +1,36 @@
-.one_first {
+.one_first_unchecked {
     background-image: url(../img/marker/first/one_blue.png);
 }
 
-.two_first {
+.two_first_unchecked {
+    display: none;
     background-image: url(../img/marker/first/two_blue.png);
 }
 
-.three_first {
+.three_first_unchecked {
+    display: none;
     background-image: url(../img/marker/first/three_blue.png);
 }
+.one_first_checked {
+    width: 8%;
+    height: 8%;
+    background-image: url(../img/marker/first/one_red.png);
+   }
 
-#first:checked~label div.first div.one_first {
+#first:checked~label div.first div.one_first_checked, #first:checked~label div.first div.one_first_unchecked {
     display: block;
     position: relative;
     top: 43%;
     left: 94%;
 }
 
-#first:checked~label div.first div.two_first {
-    display: block;
+#first:checked~label div.first div.two_first_checked, #first:checked~label div.first div.two_first_unchecked {
     position: relative;
     top: 59%;
     left: 76%;
 }
 
-#first:checked~label div.first div.three_first {
-    display: block;
+#first:checked~label div.first div.three_first_checked, #first:checked~label div.first div.three_first_unchecked {
     position: relative;
     top: 39%;
     left: 30%;

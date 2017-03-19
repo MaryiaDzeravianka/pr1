@@ -5,7 +5,7 @@ body {
 }
 
 .menu {
-    left: 10vw;
+    left: 11vw;
     position: relative;
     z-index: 2;
     width: 80vw;
@@ -21,11 +21,31 @@ body {
     display: none;
 }
 
+.first {
+    background-image: url(../img/map/first.jpg);
+    transform: matrix(1.4, 0, 0.45, 1, 0, 270);
+}
+
+.second {
+    background-image: url(../img/map/second.jpg);
+    transform: matrix(1.4, 0, 0.45, 1, 20, 200);
+}
+
+.third {
+    background-image: url(../img/map/third.jpg);
+    transform: matrix(1.4, 0, 0.45, 1, 40, 130);
+}
+
+.fourth {
+    background-image: url(../img/map/fourth.jpg);
+    transform: matrix(1.4, 0, 0.45, 1, 60, 60);
+}
+
 .fourth,
 .third,
 .second,
 .first {
-    transform: skew(30deg, 0) scale(1.2, 1);
+    transform-origin: 0 0;
     position: absolute;
     max-width: 1500px;
     max-height: 1000px;
@@ -33,16 +53,24 @@ body {
     height: 28vw;
     min-width: 300px;
     min-height: 200px;
-    border: 2px solid gray;
+    border: 1px solid black;
     background-size: cover;
     background-repeat: no-repeat;
     background-color: gray;
-    left: 28vw;
+    top: 0vw;
+    left: 11vw;
+    margin: auto auto;
     z-index: 1;
-    transition: height 0.6s ease, width 0.6s ease, left 0.6s ease, top 0.6s ease, transform 0.6s ease
-    /*, */
-    /*z-index 0s ease 0s*/
-    ;
+    transition: transform 1s ease;
+}
+
+#first:checked~label div.first,
+#second:checked~label div.second,
+#third:checked~label div.third,
+#fourth:checked~label div.fourth {
+    transform: matrix(1.8, 0, 0, 1.8, 0, 0);
+    z-index: 3;
+    transition: transform 1s ease;
 }
 
 .marker {
@@ -53,50 +81,13 @@ body {
     display: none;
 }
 
+
 .cross {
     width: 80px;
     height: 80px;
     background-repeat: no-repeat;
     background-size: contain;
     background-image: url(../img/marker/cross.png);
-}
-
-
-
-.first {
-    background-image: url(../img/map/first.jpg);
-    top: calc(15vw + 5vw);
-}
-
-.second {
-    background-image: url(../img/map/second.jpg);
-    top: calc(10vw + 5vw);
-}
-
-.third {
-    background-image: url(../img/map/third.jpg);
-    top: calc(5vw + 5vw);
-}
-
-.fourth {
-    background-image: url(../img/map/fourth.jpg);
-    top: calc(5vw);
-}
-
-
-
-#first:checked~label div.first,
-#second:checked~label div.second,
-#third:checked~label div.third,
-#fourth:checked~label div.fourth {
-    transform: skew(0deg, 0) scale(1, 1);
-    margin: auto auto;
-    width: 78vw;
-    height: 52vw;
-    z-index: 3;
-    top: 0px;
-    left: 11vw;
-    transition: top 0.6s ease, transform 0.6s ease, width 0.6s ease, height 0.6s ease, left 0.6s ease;
 }
 
 #first:checked~label div.first label div.cross,
