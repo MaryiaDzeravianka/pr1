@@ -4,12 +4,17 @@
 <head>
     <meta charset="utf-8">
     <title> </title>
-    <link rel="stylesheet" href="assets/css/styles.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/main.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/menu.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/map1.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/map2.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/map3.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/map4.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/fish.css" type="text/css" />
 </head>
 
 <body>
-    <div class="container">
+    <div id="all" class="container">
         <div class="menu">
             <ul id="nav">
                 <li><a href="#">Об игре</a></li>
@@ -61,46 +66,81 @@
                     <label for="none">
                         <div class="cross marker"></div>
                     </label>
-                    <div class="one_first marker"></div>
-                    <div class="two_first marker"></div>
-                    <div class="three_first marker"></div>
-                </div>
-            </label>
-            
-            <label for="second">
+            <div id="oneFirst" class="one_first marker"></div>
+            <div id="twoFirst" class="two_first marker"></div>
+            <div id="threeFirst" class="three_first marker"></div>
+        </div>
+        </label>
+
+        <label for="second">
                 <div class="second">
                     <label for="none">
                         <div class="cross marker"></div>
                     </label>
-                    <div class="one_second marker"></div>
-                    <div class="two_second marker"></div>
-                    <div class="three_second marker"></div>
-                </div>
-            </label>
-            
-            <label for="third"> 
+        <div class="one_second marker"></div>
+        <div class="two_second marker"></div>
+        <div class="three_second marker"></div>
+    </div>
+    </label>
+
+    <label for="third"> 
                 <div class="third">
                     <label for="none">
                         <div class="cross marker"></div>
                     </label>
-                    <div class="start_third marker"></div>
-                    <div class="number_third marker"></div>
-                    <div class="finish_third marker"></div>
-                </div>
-            </label>
-            
-            <label for="fourth">
+    <div class="start_third marker"></div>
+    <div class="number_third marker"></div>
+    <div class="finish_third marker"></div>
+    </div>
+    </label>
+
+    <label for="fourth">
                 <div class="fourth">
                     <label for="none">
                         <div class="cross marker"></div>
                     </label>
-                    <div class="start_fourth marker"></div>
-                    <div class="two_fourth marker"></div>
-                    <div class="finish_fourth marker"></div>
-                </div>
-            </label>
+    <div class="start_fourth marker"></div>
+    <div class="two_fourth marker"></div>
+    <div class="three_fourth marker"></div>
+    <div class="finish_fourth marker"></div>
+    </div>
+    </label>
+
+    </div>
+    </div>
+
+    <div id="games1" class="sea_bottom">
+
+        <div class="fish1" id="fish1" onclick="result">
+            <div></div>
+            <div></div>
+        </div>
+
+        <div class="fish2" id="fish2" onclick="result">
+            <div></div>
+            <div></div>
 
         </div>
+
+        <div class="fish3" id="fish3" onclick="result">
+            <div></div>
+            <div></div>
+
+        </div>
+
+        <div class="fish4" id="fish4" onclick="result">
+            <div></div>
+            <div></div>
+
+        </div>
+
+        <div id="task" class="example">
+            <div class='task'></div>
+        </div>
     </div>
+
+
+    <script type="text/javascript" src="assets/script/fish.js"></script>
 </body>
+
 </html>

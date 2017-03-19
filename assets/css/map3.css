@@ -1,0 +1,39 @@
+.start_third, .number_third, .finish_third{
+     width:15%;
+    height: 15%;
+}
+
+
+
+.start_third {
+    background-image: url(../img/marker/third/start_black.png);
+}
+
+.number_third {
+    background-image: url(../img/marker/third/number_black.png);
+}
+
+.finish_third {
+    background-image: url(../img/marker/third/finish_black.png);
+}
+
+#third:checked~label div.third div.start_third {
+    display: block;
+    position: relative;
+    top: 30%;
+    left: 58%;
+}
+
+#third:checked~label div.third div.number_third {
+    display: block;
+    position: relative;
+    top: 27%;
+    left: 90.5%;
+}
+
+#third:checked~label div.third div.finish_third {
+    display: block;
+    position: relative;
+    top: -34%;
+    left: 29%;
+}

@@ -1,0 +1,47 @@
+.start_fourth, .two_fourth, .three_fourth, .finish_fourth{
+    width:10%;
+    height: 10%;
+}
+.start_fourth {
+    background-image: url(../img/marker/fourth/start.png);
+}
+
+.two_fourth {
+    background-image: url(../img/marker/fourth/two.png);
+}
+
+.three_fourth {
+    background-image: url(../img/marker/fourth/three.png);
+}
+
+.finish_fourth {
+    background-image: url(../img/marker/fourth/finish.png);
+}
+
+#fourth:checked~label div.fourth div.start_fourth {
+    display: block;
+    position: relative;
+    top: 64%;
+    left: 32%;
+}
+
+#fourth:checked~label div.fourth div.two_fourth {
+    display: block;
+    position: relative;
+    top: 19%;
+    left: 78.5%;
+}
+
+#fourth:checked~label div.fourth div.three_fourth {
+    display: block;
+    position: relative;
+    top: -3%;
+    left: 32%;
+}
+
+#fourth:checked~label div.fourth div.finish_fourth {
+    display: block;
+    position: relative;
+    top: 23%;
+    left: 83%;
+}

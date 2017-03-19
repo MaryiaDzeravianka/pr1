@@ -1,0 +1,32 @@
+.one_first {
+    background-image: url(../img/marker/first/one_blue.png);
+}
+
+.two_first {
+    background-image: url(../img/marker/first/two_blue.png);
+}
+
+.three_first {
+    background-image: url(../img/marker/first/three_blue.png);
+}
+
+#first:checked~label div.first div.one_first {
+    display: block;
+    position: relative;
+    top: 43%;
+    left: 94%;
+}
+
+#first:checked~label div.first div.two_first {
+    display: block;
+    position: relative;
+    top: 59%;
+    left: 76%;
+}
+
+#first:checked~label div.first div.three_first {
+    display: block;
+    position: relative;
+    top: 39%;
+    left: 30%;
+}

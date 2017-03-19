@@ -1,0 +1,31 @@
+
+.one_second {
+    background-image: url(../img/marker/second/one_blue.png);
+}
+.two_second {
+    background-image: url(../img/marker/second/two_blue.png);
+}
+
+.three_second {
+    background-image: url(../img/marker/second/three_blue.png);
+}
+#second:checked~label div.second div.one_second {
+    display: block;
+    position: relative;
+    top: 8%;
+    left: 85.8%;
+}
+
+#second:checked~label div.second div.two_second {
+    display: block;
+    position: relative;
+    top: 15%;
+    left: 64.5%;
+}
+
+#second:checked~label div.second div.three_second {
+    display: block;
+    position: relative;
+    top: 50%;
+    left: 8%;
+}
