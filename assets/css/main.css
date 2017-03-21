@@ -5,7 +5,7 @@ body {
 }
 
 .menu {
-    left: 11vw;
+    left: 5vw;
     position: relative;
     z-index: 2;
     width: 80vw;
@@ -64,6 +64,40 @@ body {
     transition: transform 1s ease;
 }
 
+.bookmark1, .bookmark2, .bookmark3,.bookmark4 {
+    width: 300px;
+    font-size: 1.5em;
+    vertical-align: baseline;
+    display: block;
+    padding: 5px 15px;
+    color: #fff;
+    background: #333;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
+    /* Тень текста, чтобы приподнять его на немного */
+    border-radius: 8px;
+    font-weight: bold;
+    position: absolute;
+    top: 80px;
+    left: 5vw;
+}
+.bookmark4{
+   top: 80px; 
+}
+.bookmark3{
+   top: 150px; 
+}
+.bookmark2{
+   top: 220px; 
+}
+.bookmark1{
+   top: 290px; 
+}
+
+.bookmark1:hover, .bookmark2:hover, .bookmark3:hover,.bookmark4:hover{
+   background:#6b0c36;
+	background:rgba(107,12,54,0.75);/* Выглядит полупрозрачным */
+}
 #first:checked~label div.first,
 #second:checked~label div.second,
 #third:checked~label div.third,
@@ -81,23 +115,79 @@ body {
     display: none;
 }
 
-
-.cross {
-    width: 80px;
-    height: 80px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-image: url(../img/marker/cross.png);
+.btn_exit_map {
+    display: none;
+    color: #fff;
+    padding: 5px;
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    width: 25px;
 }
 
-#first:checked~label div.first label div.cross,
-#second:checked~label div.second label div.cross,
-#third:checked~label div.third label div.cross,
-#fourth:checked~label div.fourth label div.cross {
+.btn_exit_game {
+    color: #fff;
+    padding: 5px;
+    position: absolute;
+    top: 9px;
+    right: 5px;
+    cursor: pointer;
+    width: 48px;
+}
+
+.btn_exit_map .line1 {
+    -webkit-transform: rotate(45deg);
+    top: 0px;
+}
+
+.btn_exit_game .line1 {
+    -webkit-transform: rotate(45deg);
+    top: 5px;
+}
+
+.btn_exit_map .line2 {
+    -webkit-transform: rotate(-45deg);
+    top: -7px;
+}
+
+.btn_exit_game .line2 {
+    -webkit-transform: rotate(-45deg);
+    top: -5px;
+}
+
+.btn_exit_map span {
     display: block;
+    height: 5px;
+    background-color: black;
+    /*margin: 5px 0 0;*/
+    transition: all .1s linear .23s;
     position: relative;
-    top: 2%;
-    left: 89%;
-    width: 12%;
-    height: 12%;
+}
+
+.btn_exit_game span {
+    display: block;
+    height: 9px;
+    background-color: white;
+    /*margin: 5px 0 0;*/
+    transition: all .1s linear .23s;
+    position: relative;
+}
+
+.btn_exit_map:hover span,
+.btn_exit_game:hover span {
+    background-color: red;
+}
+
+#first:checked~label div.first label.btn_exit_map,
+#second:checked~label div.second label.btn_exit_map,
+#third:checked~label div.third label.btn_exit_map,
+#fourth:checked~label div.fourth label.btn_exit_map {
+    display: block;
+    position: fixed;
+    padding: 5px;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    width: 25px;
 }

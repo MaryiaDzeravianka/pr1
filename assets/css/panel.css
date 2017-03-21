@@ -1,0 +1,18 @@
+#info-panel {
+    margin: auto auto;
+    padding: 20px;
+    width: 60%;
+    font-size: 24px;
+    font-family: Arial;
+    line-height: 120%;
+    text-indent: 20px;
+    text-align: justify;
+    background-color: grey;
+    border-radius: 25px;
+}
+
+#info-panel p, #info-panel ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    
+}

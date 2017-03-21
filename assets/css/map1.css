@@ -19,19 +19,30 @@
 
 #first:checked~label div.first div.one_first_checked, #first:checked~label div.first div.one_first_unchecked {
     display: block;
-    position: relative;
-    top: 43%;
+    position: absolute;
+    top: 54%;
     left: 94%;
 }
 
+
+
 #first:checked~label div.first div.two_first_checked, #first:checked~label div.first div.two_first_unchecked {
+   /*display: block;*/
     position: relative;
-    top: 59%;
+    top: 79%;
     left: 76%;
 }
 
 #first:checked~label div.first div.three_first_checked, #first:checked~label div.first div.three_first_unchecked {
+    /*display: block;*/
     position: relative;
-    top: 39%;
+    top: 59%;
     left: 30%;
 }
+
+.line1, .line2 {
+    display: block;
+}
+/*#first~label div.first #twoFirst {*/
+/*    display: none !important;*/
+/*}*/

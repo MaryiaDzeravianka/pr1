@@ -1,53 +1,5 @@
-@keyframes swim {
-    0% {
-        left: 0%;
-    }
-    50% {
-        left: 87%;
-    }
-    100% {
-        left: 0%;
-    }
-}
 
-@keyframes swimback {
-    0% {
-        left: 87%;
-    }
-    50% {
-        left: 0%;
-    }
-    100% {
-        left: 87%;
-    }
-}
 
-@keyframes spinner {
-    0% {
-        transform: rotateY(0deg);
-    }
-    49% {
-        transform: rotateY(0deg);
-    }
-    50% {
-        transform: rotateY(-180deg);
-    }
-    99% {
-        transform: rotateY(-180deg);
-    }
-    100% {
-        transform: rotateY(0deg);
-    }
-}
-.cross1 {
-    position: absolute;
-    left: 90%;
-    width: 12%;
-    height: 12%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-image: url(../img/marker/cross.png);
-}
 .points1, .points2, .example {
     position: absolute;
     width: 8vw;
@@ -70,7 +22,7 @@
 }
 
 .sea_bottom {
-    display: none;
+    /*display: none;*/
     position: relative;
     margin: 2vw auto auto auto;
     width: 70vw;
@@ -78,11 +30,45 @@
     background-image: url(../img/gamefish/seabottom.jpg);
     background-size: cover;
 }
+.fish1, 
+.fish2,
+.fish3,
+.fish4 {
+    position:relative;
+    
+    
+}
+.fish1:hover, 
+.fish2:hover,
+.fish3:hover,
+.fish4:hover {
+    cursor: pointer;
+    
+    
+}
+.fish1{
+  top: 2%;  
+}
+.fish2{
+    top: 20%;
+}
+    
+.fish3{
+    top: 35%;
+}
+.fish4 {
+    top: 55%;
+}
+
+.hidden_fish{
+    opacity: 0;
+    transition: all 2s;
+}
 
 .fish1 div:nth-of-type(1) {
-    top: 2%;
+    
     position: absolute;
-    animation: swim 12s linear infinite, spinner 12s linear infinite;
+    animation: horisontal-move 12s linear  infinite, spinner 12s linear infinite;
     width: 10vw;
     height: 10vw;
     background-image: url(../img/gamefish/fish1.png);
@@ -90,9 +76,9 @@
 }
 
 .fish2 div:nth-of-type(1) {
-    top: 20%;
+    
     position: absolute;
-    animation: swimback 12s linear infinite, spinner 12s linear infinite reverse;
+    animation: horisontal-move-back 12s linear 0.1s infinite, spinner 12s linear infinite reverse;
     width: 8vw;
     height: 8vw;
     background-image: url(../img/gamefish/fish2.png);
@@ -100,9 +86,9 @@
 }
 
 .fish3 div:nth-of-type(1) {
-    top: 35%;
+    
     position: absolute;
-    animation: swim 12s linear infinite, spinner 12s linear infinite;
+    animation: horisontal-move 12s linear 0.05s infinite, spinner 12s linear infinite;
     width: 10vw;
     height: 10vw;
     background-image: url(../img/gamefish/fish3.png);
@@ -110,9 +96,9 @@
 }
 
 .fish4 div:nth-of-type(1) {
-    top: 55%;
+    
     position: absolute;
-    animation: swimback 12s linear infinite, spinner 12s linear infinite reverse;
+    animation: horisontal-move-back 12s linear infinite, spinner 12s linear infinite reverse;
     width: 8vw;
     height: 8vw;
     background-image: url(../img/gamefish/fish4.png);
@@ -122,40 +108,41 @@
 
 
 .task {
-    font-size: 4vw;
+    font-size: 4vw; 
     font-weight: bold;
     text-align: center;
     vertical-align: middle;
 }
 .correct {
     color: green;
-    font-size: 2vw;
+    font-size: 3 vw; 
     text-align: center;
     vertical-align: middle;
 }
 
 .fish1 div:nth-of-type(2) {
-    animation: swim 12s linear infinite;
+    animation: horisontal-move 12s linear infinite;
     top: 2%;
-    padding: 5% 6%;
+    padding: 5.5% 6%;
 }
 
 .fish2 div:nth-of-type(2) {
-    animation: swimback 12s linear infinite;
+    animation: horisontal-move-back 12s linear infinite;
     top: 20%;
-    padding: 3.2% 5%;
+    padding: 3.5% 4%;
+  
 }
 
 .fish3 div:nth-of-type(2) {
-    animation: swim 12s linear infinite;
+    animation: horisontal-move 12s linear infinite;
     top: 35%;
-    padding: 5% 7%;
+    padding: 5.2% 7%;
 }
 
 .fish4 div:nth-of-type(2) {
-    animation: swimback 12s linear infinite;
+    animation: horisontal-move-back 12s linear infinite;
     top: 55%;
-    padding: 3.5% 4.5%;
+    padding: 4.2% 4.7%;
 }
 
 .fish1 div:nth-of-type(2),
@@ -166,6 +153,7 @@
     position: absolute;
     width: 10%;
     height: 10%;
-    font-size: 3vw;
+    font-size: 2vw;
     font-weight: bold;
+    word-spacing:-0.5vw;
 }

@@ -32,6 +32,7 @@ var initGame = function() {
     for (var i = 0; i < fishList.length; i++) { // выбираем рыбку
         fishList[i].querySelector("div:nth-of-type(2)").innerHTML = answers[i]; //вставляем числа в рыбки
         fishList[i].style.display = 'block'; //стиль для рыбки с числом
+        fishList[i].classList.remove('hidden_fish');
     }
     ready = true;
     points = 5;
@@ -41,10 +42,12 @@ var initGame = function() {
     taskPoints.querySelector("div").innerHTML = points;
 };
 
-exite.onclick = function() {
+exit.onclick = function() {
     games1.style.display = 'none';
     all.style.display = 'block';
+    
 };
+
 
 oneFirst.onclick = function() {
     totalPoints = 0;
@@ -74,7 +77,7 @@ for (var i = 0; i < fishList.length; i++) {
                 }
             }
             else {
-                this.style.display = 'none'; // иначе рыбка пропадает
+                this.classList.add('hidden_fish'); // иначе рыбка пропадает плавно
                 points -= 2;
                 taskPoints.querySelector("div").innerHTML = points;
             }

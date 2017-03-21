@@ -19,7 +19,7 @@
 	}
 #nav li a{
 	text-align: center;
-	font-size: 23px;
+	font-size: 1.5em;
 	vertical-align: baseline;
 	display:block;
 	padding:5px;
@@ -52,7 +52,7 @@
 #nav ul a{
 	white-space:nowrap; /* Останавливаем перенос текста и создаем многострочный выпадающий пункт */
 	display:block;
-	font-size: 16px;
+	font-size: 1em;
 }
 #nav li:hover ul{ /* Выводим выпадающий пункт при наведении курсора */
 	left:-40px; /* Приносим его обратно на экран, когда нужно */
