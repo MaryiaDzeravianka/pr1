@@ -17,7 +17,7 @@ body {
     height: 90vh;
 }
 
-.stage input {
+ input {
     display: none;
 }
 
@@ -64,7 +64,10 @@ body {
     transition: transform 1s ease;
 }
 
-.bookmark1, .bookmark2, .bookmark3,.bookmark4 {
+.bookmark1,
+.bookmark2,
+.bookmark3,
+.bookmark4 {
     width: 300px;
     font-size: 1.5em;
     vertical-align: baseline;
@@ -81,23 +84,32 @@ body {
     top: 80px;
     left: 5vw;
 }
-.bookmark4{
-   top: 80px; 
-}
-.bookmark3{
-   top: 150px; 
-}
-.bookmark2{
-   top: 220px; 
-}
-.bookmark1{
-   top: 290px; 
+
+.bookmark4 {
+    top: 80px;
 }
 
-.bookmark1:hover, .bookmark2:hover, .bookmark3:hover,.bookmark4:hover{
-   background:#6b0c36;
-	background:rgba(107,12,54,0.75);/* Выглядит полупрозрачным */
+.bookmark3 {
+    top: 150px;
 }
+
+.bookmark2 {
+    top: 220px;
+}
+
+.bookmark1 {
+    top: 290px;
+}
+
+.bookmark1:hover,
+.bookmark2:hover,
+.bookmark3:hover,
+.bookmark4:hover {
+    background: #6b0c36;
+    background: rgba(107, 12, 54, 0.75);
+    /* Выглядит полупрозрачным */
+}
+
 #first:checked~label div.first,
 #second:checked~label div.second,
 #third:checked~label div.third,
@@ -112,7 +124,7 @@ body {
     height: 8%;
     background-repeat: no-repeat;
     background-size: contain;
-    display: none;
+    /*display: none;*/
 }
 
 .btn_exit_map {
@@ -190,4 +202,27 @@ body {
     right: 5px;
     cursor: pointer;
     width: 25px;
+}
+
+
+/*****************НАВИГАЦИЯ СТРАНИЧИЧЕК*****************************/
+
+#mainPageButton:checked~#mainPage,
+#birdGamePageButton:checked~#birdGamePage,
+#fishGamePageButton:checked~#fishGamePage,
+#spiderGamePageButton:checked~#spiderGamePage,
+#infoPanelPageButton:checked~#infoPanelPage
+{
+    display: block;
+}
+
+
+
+#mainPage,
+#birdGamePage,
+#fishGamePage,
+#spiderGamePage,
+#infoPanelPage
+{
+    display: none;
 }

@@ -1,12 +1,15 @@
 
 .one_second {
+    display: none;
     background-image: url(../img/marker/second/one_blue.png);
 }
 .two_second {
+    display: none;
     background-image: url(../img/marker/second/two_blue.png);
 }
 
 .three_second {
+    display: none;
     background-image: url(../img/marker/second/three_blue.png);
 }
 #second:checked~label div.second div.one_second {

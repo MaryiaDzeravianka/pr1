@@ -40,7 +40,6 @@
     }
 }
 
-
 @keyframes vertical-move {
     0% {
         top: 56%;
@@ -49,7 +48,7 @@
         top: 0%;
     }
     100% {
-       top: 56%;
+        top: 56%;
     }
 }
 
@@ -63,4 +62,38 @@
     100% {
         top: 0%;
     }
+}
+
+.total_points,
+.round_points,
+.current_task {
+    position: absolute;
+    top: 75%;
+    width: 8vw;
+    height: 5vw;
+    background-color: white;
+    font-size: 4vw;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.total_points {
+    left: 5%;
+}
+
+.round_points {
+    left: 80%;
+}
+
+.current_task {
+    left: 28%;
+    width: 30vw;
+}
+
+.correct {
+    color: green;
+    font-size: 3 vw;
+    /*text-align: center;*/
+    /*vertical-align: middle;*/
 }

@@ -1,4 +1,5 @@
 .one_first_unchecked {
+     display: none;
     background-image: url(../img/marker/first/one_blue.png);
 }
 
@@ -16,6 +17,7 @@
     height: 8%;
     background-image: url(../img/marker/first/one_red.png);
    }
+   
 
 #first:checked~label div.first div.one_first_checked, #first:checked~label div.first div.one_first_unchecked {
     display: block;
@@ -27,16 +29,16 @@
 
 
 #first:checked~label div.first div.two_first_checked, #first:checked~label div.first div.two_first_unchecked {
-   /*display: block;*/
-    position: relative;
+   display: block;
+    position: absolute;
     top: 79%;
     left: 76%;
 }
 
 #first:checked~label div.first div.three_first_checked, #first:checked~label div.first div.three_first_unchecked {
-    /*display: block;*/
-    position: relative;
-    top: 59%;
+    display: block;
+    position: absolute;
+    top: 67%;
     left: 30%;
 }
 

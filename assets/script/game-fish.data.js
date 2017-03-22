@@ -1,4 +1,4 @@
-var tasks = [{
+var fishData = [{
     "primer": "3+2=",
     "answers": [5, 6, 4, 7]
 }, 
@@ -40,7 +40,7 @@ var tasks = [{
 },
 {
     "primer": "5+2=",
-    "answers": [7, 5, 7, 6]
+    "answers": [7, 5, 8, 6]
 },
 {
     "primer": "2+5=",

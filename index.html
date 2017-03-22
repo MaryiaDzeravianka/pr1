@@ -4,25 +4,30 @@
 <head>
     <meta charset="utf-8">
     <title> </title>
-    <link rel="stylesheet" href="assets/css/main.1.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/main.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/menu.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/map1.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/map2.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/map3.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/map4.css" type="text/css" />
-    <link rel="stylesheet" href="assets/css/fish.css" type="text/css" />
-    <link rel="stylesheet" href="assets/css/birds.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/game-fish.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/game-birds.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/game-spiders.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/game-common.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/panel.css" type="text/css" />
-    <link rel="stylesheet" href="assets/css/spiders.css" type="text/css" />
- <link rel="stylesheet" href="assets/css/game-common.css" type="text/css" />
 </head>
 
 <body>
-    <div id="all" class="container">
+    <input id="mainPageButton" type="radio" name="pages" checked>
+    <input id="birdGamePageButton" type="radio" name="pages">
+    <input id="fishGamePageButton" type="radio" name="pages">
+    <input id="spiderGamePageButton" type="radio" name="pages">
+    <input id="infoPanelPageButton" type="radio" name="pages">
+
+    <div id="mainPage" class="container">
         <div class="menu">
             <ul id="nav">
                 <li><a href="#">Об игре</a></li>
-
                 <li>
                     <a href="#">1 класс</a>
                     <ul>
@@ -30,7 +35,6 @@
                         <li><a href="#">Теория</a></li>
                     </ul>
                 </li>
-
                 <li>
                     <a href="#">2 класс</a>
                     <ul>
@@ -38,7 +42,6 @@
                         <li><a href="#">Теория</a></li>
                     </ul>
                 </li>
-
                 <li>
                     <a href="#">3 класс</a>
                     <ul>
@@ -46,7 +49,6 @@
                         <li><a href="#">Теория</a></li>
                     </ul>
                 </li>
-
                 <li>
                     <a href="#">4 класс</a>
                     <ul>
@@ -54,9 +56,7 @@
                         <li><a href="#">Теория</a></li>
                     </ul>
                 </li>
-
             </ul>
-
         </div>
         <div class="stage">
             <input id="first" type="radio" name="map ">
@@ -65,86 +65,83 @@
             <input id="fourth" type="radio" name="map ">
             <input id="none" type="radio" name="map ">
 
-
             <label for="first">
-                    <div class="bookmark1">1 класс</div>
-                </label>
+                <div class="bookmark1">1 класс</div>
+            </label>
             <label for="second">
-                    <div class="bookmark2">2 класс</div>
-                </label>
+                <div class="bookmark2">2 класс</div>
+            </label>
             <label for="third">
-                    <div class="bookmark3">3 класс</div>
-                </label>
+                <div class="bookmark3">3 класс</div>
+            </label>
             <label for="fourth">
-                    <div class="bookmark4">4 класс</div>
-                </label>
-
-
-
-
-
+                <div class="bookmark4">4 класс</div>
+            </label>
 
             <label for="first">
-                        <div class="first"> 
+                <div class="first"> 
                     <label class="btn_exit_map" for="none">
                         <span class="line1"></span>
                         <span class="line2"></span>
                     </label>
-            <div id="oneFirst" class="one_first_unchecked marker"></div>
-            <div id="twoFirst" class="two_first_unchecked marker"></div>
-            <div id="threeFirst" class="three_first_unchecked marker"></div>
+                    <label for="birdGamePageButton">   
+                        <div id="firstMapFirstStep" class="one_first_unchecked marker"></div>
+                    </label>
+                    <label for="fishGamePageButton">
+                        <div id="firstMapSecondStep" class="two_first_unchecked marker"></div>
+                    </label>
+                    <label for="spiderGamePageButton">
+                        <div id="firstMapThirdStep" class="three_first_unchecked marker"></div>
+                    </label>
+                </div>
+            </label>
 
-        </div>
-        </label>
-
-        <label for="second">
+            <label for="second">
                 <div class="second">
                     <label class="btn_exit_map" for="none">
                         <span class="line1"></span>
                         <span class="line2"></span>
                     </label>
-        <div class="one_second marker"></div>
-        <div class="two_second marker"></div>
-        <div class="three_second marker"></div>
-    </div>
-    </label>
+                    <div class="one_second marker"></div>
+                    <div class="two_second marker"></div>
+                    <div class="three_second marker"></div>
+                </div>
+            </label>
 
-    <label for="third"> 
+            <label for="third"> 
                 <div class="third">
                     <label class="btn_exit_map" for="none">
                        <span class="line1"></span>
                        <span class="line2"></span>
                     </label>
-    <div class="start_third marker"></div>
-    <div class="number_third marker"></div>
-    <div class="finish_third marker"></div>
-    </div>
-    </label>
+                    <div class="start_third marker"></div>
+                    <div class="number_third marker"></div>
+                    <div class="finish_third marker"></div>
+                </div>
+            </label>
 
-    <label for="fourth">
+            <label for="fourth">
                 <div class="fourth">
                     <label class="btn_exit_map" for="none">
                       <span class="line1"></span>
                       <span class="line2"></span>
                     </label>
-    <div class="start_fourth marker"></div>
-    <div class="two_fourth marker"></div>
-    <div class="three_fourth marker"></div>
-    <div class="finish_fourth marker"></div>
-    </div>
-    </label>
-
-    </div>
-    </div>
-
-
-
-
-    <div id="game1" class="sea_bottom">
-        <div class="btn_exit_game" id="exitFish">
-            <span class="line1"></span>
-            <span class="line2"></span>
+                    <div class="start_fourth marker"></div>
+                    <div class="two_fourth marker"></div>
+                    <div class="three_fourth marker"></div>
+                    <div class="finish_fourth marker"></div>
+                </div>
+            </label>
         </div>
+    </div>
+
+    <div id="fishGamePage" class="sea_bottom">
+        <label for="mainPageButton">
+            <div class="btn_exit_game">
+                <span class="line1"></span>
+                <span class="line2"></span>
+            </div>
+        </label>
         <div class="fish1" id="fish1">
             <div></div>
             <div></div>
@@ -153,37 +150,36 @@
         <div class="fish2" id="fish2">
             <div></div>
             <div></div>
-
         </div>
 
         <div class="fish3" id="fish3">
             <div></div>
             <div></div>
-
         </div>
 
         <div class="fish4" id="fish4">
             <div></div>
             <div></div>
-
         </div>
 
-        <div id="allPointsFish" class="points1">
-            <div class='task'></div>
+        <div class="total_points">
+            <div></div>
         </div>
-        <div id="taskFish" class="example">
-            <div class='task'></div>
+        <div class="current_task">
+            <div></div>
         </div>
-        <div id="taskPointsFish" class="points2">
-            <div class='task'></div>
+        <div class="round_points">
+            <div></div>
         </div>
     </div>
 
-    <div id="games2" class="forest">
-        <div class="btn_exit_game" id="exitBird">
-            <span class="line1"></span>
-            <span class="line2"></span>
-        </div>
+    <div id="birdGamePage" class="forest">
+        <label for="mainPageButton">
+            <div class="btn_exit_game">
+                <span class="line1"></span>
+                <span class="line2"></span>
+            </div>
+        </label>
         <div class="bird1" id="bird1">
             <div></div>
             <div></div>
@@ -207,24 +203,25 @@
 
         </div>
 
-        <div id="allPointsBird" class="points1">
-            <div class='task'></div>
+        <div class="total_points">
+            <div></div>
         </div>
-        <div id="taskBird" class="example">
-            <div class='task'></div>
+        <div class="current_task">
+            <div></div>
         </div>
-        <div id="taskPointsBird" class="points2">
-            <div class='task'></div>
+        <div class="round_points">
+            <div></div>
         </div>
     </div>
 
-
-
-    <div id="games3" class="room">
-        <div class="btn_exit_game" id="exitSpider">
-            <span class="line1"></span>
-            <span class="line2"></span>
-        </div>
+    <div id="spiderGamePage" class="room">
+        <label for="mainPageButton">
+            <div class="btn_exit_game">
+                <span class="line1"></span>
+                <span class="line2"></span>
+            </div>
+        </label>
+        
         <div class="spider1" id="spider1">
             <div></div>
             <div></div>
@@ -242,27 +239,30 @@
 
         </div>
 
-        <div class="spider4" id="spiderspider4">
+        <div class="spider4" id="spider4">
             <div></div>
             <div></div>
 
         </div>
 
-        <div id="allPointsSpider" class="points1">
-            <div class='task'></div>
+        <div class="total_points">
+            <div></div>
         </div>
-        <div id="taskSpider" class="example">
-            <div class='task'></div>
+        <div class="current_task">
+            <div></div>
         </div>
-        <div id="taskPointsSpider" class="points2">
-            <div class='task'></div>
+        <div class="round_points">
+            <div></div>
         </div>
     </div>
 
-
-
-
-    <div id="info-panel">
+    <div id="infoPanelPage" class="info-panel">
+        <label for="mainPageButton">
+        <div class="btn_exit_game">
+            <span class="line1"></span>
+            <span class="line2"></span>
+        </div>
+        </label>
         <p>Так же, как спортсмен тренирует мышцы многократным повторением упражнения и регулярными тренировками, так же нужно тренировать свой мозг.</p>
         <p>Регулярно работая с тренажером по математике, ваш ребенок начнет считать быстрее и правильнее.</p>
         <h4>Как приступить к игре?</h4>
@@ -286,8 +286,12 @@
         </ol>
     </div>
 
-    <script type="text/javascript" src="assets/script/fish.data.js"></script>
-    <script type="text/javascript" src="assets/script/fish.js"></script>
+    <script type="text/javascript" src="assets/script/map.js"></script>
+    <script type="text/javascript" src="assets/script/game-common.js"></script>
+    <script type="text/javascript" src="assets/script/game-fish.data.js"></script>
+    <script type="text/javascript" src="assets/script/game-fish.js"></script>
+    <script type="text/javascript" src="assets/script/game-bird.js"></script>
+    <script type="text/javascript" src="assets/script/game-spider.js"></script>
 </body>
 
 </html>

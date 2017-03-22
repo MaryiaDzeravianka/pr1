@@ -1,4 +1,6 @@
 .start_fourth, .two_fourth, .three_fourth, .finish_fourth{
+        display: none;
+
     width:10%;
     height: 10%;
 }

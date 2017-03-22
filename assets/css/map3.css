@@ -1,9 +1,10 @@
-.start_third, .number_third, .finish_third{
-     width:15%;
+.start_third,
+.number_third,
+.finish_third {
+    width: 15%;
     height: 15%;
+    display: none;
 }
-
-
 
 .start_third {
     background-image: url(../img/marker/third/start_black.png);
