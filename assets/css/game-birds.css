@@ -91,20 +91,19 @@
 .bird2 div:nth-of-type(2) {
     animation: horisontal-move-back 12s linear infinite;
     top: 20%;
-    padding: 3.5% 4%;
-  
+    padding: 5.5% 5%;
 }
 
 .bird3 div:nth-of-type(2) {
     animation: horisontal-move 12s linear infinite;
     top: 35%;
-    padding: 5.2% 7%;
+    padding: 6.2% 6%;
 }
 
 .bird4 div:nth-of-type(2) {
     animation: horisontal-move-back 12s linear infinite;
     top: 55%;
-    padding: 4.2% 4.7%;
+    padding: 5.5% 5.8%;
 }
 
 .bird1 div:nth-of-type(2),

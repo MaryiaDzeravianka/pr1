@@ -14,6 +14,8 @@
 .spider4 {
     position: relative;
     display: inline-block;
+    width: 16%;
+    height: 100%;
 }
 
 .spider1:hover,
@@ -24,24 +26,19 @@
 }
 
 .spider1 {
-    height:100%;
-    left: 3%;
+    left: 2%;
 }
 
 .spider2 {
-    height:100%;
-    left: 30%;
-
+    left: 9%;
 }
 
 .spider3 {
-    height:100%;
-    left: 58%;
+    left: 19%;
 }
 
 .spider4 {
-     height:100%;
-    left: 85%;
+    left: 32%;
 }
 
 
@@ -94,37 +91,38 @@
 
 .spider1 div:nth-of-type(2) {
     animation: vertical-move 12s linear infinite;
-    top: 2%;
-    padding: 5.5% 6%;
+    padding-top: 31%;
+    left: -10%;
 }
 
 .spider2 div:nth-of-type(2) {
     animation: vertical-move-back 12s linear infinite;
-    top: 20%;
-    padding: 3.5% 4%;
+    padding-top: 35%;
+    left: -11%;
 }
 
 .spider3 div:nth-of-type(2) {
     animation: vertical-move 12s linear infinite;
-    top: 35%;
-    padding: 5.2% 7%;
+    padding-top: 38%;
+    left: -8%;
 }
 
 .spider4 div:nth-of-type(2) {
     animation: vertical-move-back 12s linear infinite;
-    top: 55%;
-    padding: 4.2% 4.7%;
+    padding-top: 35%;
+    left: -10%;
 }
 
 .spider1 div:nth-of-type(2),
 .spider2 div:nth-of-type(2),
 .spider3 div:nth-of-type(2),
 .spider4 div:nth-of-type(2) {
-    left: 3%;
-    position: absolute;
-    width: 10%;
-    height: 10%;
-    font-size: 2vw;
+    color: white;
+    position: relative;
+    height: 18%;
+    font-size: 3vw;
     font-weight: bold;
     word-spacing: -0.5vw;
+    text-align: center;
+    
 }
