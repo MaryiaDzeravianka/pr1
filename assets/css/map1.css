@@ -1,50 +1,39 @@
-.one_first_unchecked {
-     display: none;
-    background-image: url(../img/marker/first/one_blue.png);
-}
-
-.two_first_unchecked {
+#firstMapFirstStep,
+#firstMapSecondStep,
+#firstMapThirdStep {
     display: none;
-    background-image: url(../img/marker/first/two_blue.png);
 }
 
-.three_first_unchecked {
-    display: none;
-    background-image: url(../img/marker/first/three_blue.png);
+.available {
+    background-image: url(../img/marker/marker-purple.png);
 }
-.one_first_checked {
-    width: 8%;
-    height: 8%;
-    background-image: url(../img/marker/first/one_red.png);
-   }
-   
 
-#first:checked~label div.first div.one_first_checked, #first:checked~label div.first div.one_first_unchecked {
+.available:hover {
+    background-image: url(../img/marker/marker-red.png);
+}
+
+.unavailable {
+    background-image: url(../img/marker/marker-grey.png);
+}
+
+#first:checked~label #firstMapFirstStep,
+#first:checked~label #firstMapSecondStep,
+#first:checked~label #firstMapThirdStep {
     display: block;
     position: absolute;
+}
+
+#first:checked~label #firstMapFirstStep {
     top: 54%;
     left: 94%;
 }
 
-
-
-#first:checked~label div.first div.two_first_checked, #first:checked~label div.first div.two_first_unchecked {
-   display: block;
-    position: absolute;
-    top: 79%;
-    left: 76%;
+#first:checked~label #firstMapSecondStep {
+    top: 81%;
+    left: 73%;
 }
 
-#first:checked~label div.first div.three_first_checked, #first:checked~label div.first div.three_first_unchecked {
-    display: block;
-    position: absolute;
+#first:checked~label #firstMapThirdStep {
     top: 67%;
     left: 30%;
 }
-
-.line1, .line2 {
-    display: block;
-}
-/*#first~label div.first #twoFirst {*/
-/*    display: none !important;*/
-/*}*/

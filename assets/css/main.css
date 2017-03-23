@@ -124,11 +124,10 @@ input {
     height: 8%;
     background-repeat: no-repeat;
     background-size: contain;
-    /*display: none;*/
 }
 
 .btn_exit_map {
-     font-family:fantasy;
+    font-family: fantasy;
     font-weight: bold;
     font-size: 36px;
     color: black;
@@ -142,8 +141,9 @@ input {
     cursor: pointer;
     width: 25px;
 }
+
 .btn_exit_game {
-    font-family:fantasy;
+    font-family: fantasy;
     color: #fff;
     padding: 5px;
     position: absolute;
@@ -157,10 +157,9 @@ input {
     width: 48px;
 }
 
-
 .btn_exit_map:hover,
 .btn_exit_game:hover {
-  color: red;
+    color: red;
 }
 
 #first:checked~label div.first label.btn_exit_map,
