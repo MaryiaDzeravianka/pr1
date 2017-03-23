@@ -1,34 +1,21 @@
-
-.one_second {
-    display: none;
-    background-image: url(../img/marker/marker-purple.png);
-}
-.two_second {
-    display: none;
-    background-image: url(../img/marker/marker-grey.png);
-}
-
-.three_second {
-    display: none;
-    background-image: url(../img/marker/marker-grey.png);
-}
-#second:checked~label div.second div.one_second {
+#second:checked~label #secondMapFirstStep,
+#second:checked~label #secondMapSecondStep,
+#second:checked~label #secondMapThirdStep {
     display: block;
-    position: relative;
+    position: absolute;
+}
+
+#second:checked~label #secondMapFirstStep {
     top: 20%;
     left: 84.8%;
 }
 
-#second:checked~label div.second div.two_second {
-    display: block;
-    position: relative;
+#second:checked~label #secondMapSecondStep {
     top: 26%;
     left: 63.5%;
 }
 
-#second:checked~label div.second div.three_second {
-    display: block;
-    position: relative;
+#second:checked~label #secondMapThirdStep {
     top: 62%;
     left: 7%;
 }

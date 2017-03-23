@@ -1,28 +1,80 @@
-firstMapFirstStep.onclick = function() {
-    initBirdGame();
+var mapState = {
+    "firstMapFirstStep": true,
+    "firstMapSecondStep": false,
+    "firstMapThirdStep": false,
+
+    "secondMapFirstStep": true,
+    "secondMapSecondStep": false,
+    "secondMapThirdStep": false
+
 };
 
-firstMapSecondStep.onclick = function() {
-    initFishGame();
+var currentStep;
+var nextStep;
+var nextStepLabel;
+
+
+firstMapFirstStep.onclick = function () {
+    if (mapState[this.id]) {
+        currentStep = this;
+        nextStep = firstMapSecondStep;
+        nextStepLabel = "fish";
+
+        initBirdGame(gameDataLevel1);
+    }
 };
 
-firstMapThirdStep.onclick = function() {
-    initSpiderGame();
+firstMapSecondStep.onclick = function () {
+    if (mapState[this.id]) {
+        currentStep = this;
+        nextStep = firstMapThirdStep;
+        nextStepLabel = "spider";
+
+        initFishGame(gameDataLevel2);
+    }
+};
+
+firstMapThirdStep.onclick = function () {
+    if (mapState[this.id]) {
+        currentStep = this;
+        nextStep = secondMapFirstStep;
+        nextStepLabel = "spider";
+
+        initSpiderGame(gameDataLevel3);
+    }
+};
+
+secondMapFirstStep.onclick = function () {
+    if (mapState[this.id]) {
+        currentStep = this;
+        nextStep = secondMapSecondStep;
+        nextStepLabel = "fish";
+
+        initSpiderGame(gameDataLevel4);
+    }
+};
+
+secondMapSecondStep.onclick = function () {
+    if (mapState[this.id]) {
+        currentStep = this;
+        nextStep = secondMapThirdStep;
+        nextStepLabel = "bird";
+
+        initFishGame(gameDataLevel5);
+    }
+};
+
+secondMapThirdStep.onclick = function () {
+    if (mapState[this.id]) {
+        currentStep = this;
+        nextStep = secondMapFirstStep;
+        nextStepLabel = "";
+
+        initBirdGame(gameDataLevel6);
+    }
 };
 
 /*
-secondMapFirstStep.onclick = function() {
-    initBirdGame();
-};
-
-secondMapSecondStep.onclick = function() {
-    initFishGame();
-};
-
-secondMapThirdStep.onclick = function() {
-    initSpiderGame();
-};
-
 thirdMapFirstStep.onclick = function() {
     initBirdGame();
 };

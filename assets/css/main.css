@@ -119,13 +119,6 @@ input {
     transition: transform 1s ease;
 }
 
-.marker {
-    width: 8%;
-    height: 8%;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
 .btn_exit_map {
     font-family: fantasy;
     font-weight: bold;

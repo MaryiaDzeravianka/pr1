@@ -1,21 +1,3 @@
-#firstMapFirstStep,
-#firstMapSecondStep,
-#firstMapThirdStep {
-    display: none;
-}
-
-.available {
-    background-image: url(../img/marker/marker-purple.png);
-}
-
-.available:hover {
-    background-image: url(../img/marker/marker-red.png);
-}
-
-.unavailable {
-    background-image: url(../img/marker/marker-grey.png);
-}
-
 #first:checked~label #firstMapFirstStep,
 #first:checked~label #firstMapSecondStep,
 #first:checked~label #firstMapThirdStep {

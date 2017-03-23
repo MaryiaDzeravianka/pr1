@@ -1,0 +1,22 @@
+.marker {
+    width: 8%;
+    height: 8%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: none;
+}
+.available {
+    background-image: url(../img/marker/marker-purple.png);
+}
+
+.available:hover, .passed:hover {
+    background-image: url(../img/marker/marker-red.png);
+    cursor: pointer;
+}
+
+.unavailable {
+    background-image: url(../img/marker/marker-grey.png);
+}
+.passed {
+    background-image: url(../img/marker/marker-blue.png);
+}

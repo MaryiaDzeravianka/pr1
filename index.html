@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="assets/css/map2.css" type="text/css" />
 		<link rel="stylesheet" href="assets/css/map3.css" type="text/css" />
 		<link rel="stylesheet" href="assets/css/map4.css" type="text/css" />
+        <link rel="stylesheet" href="assets/css/map-common.css" type="text/css" />
 		<link rel="stylesheet" href="assets/css/game-fish.css" type="text/css" />
 		<link rel="stylesheet" href="assets/css/game-birds.css" type="text/css" />
 		<link rel="stylesheet" href="assets/css/game-spiders.css" type="text/css" />
@@ -47,53 +48,58 @@
 				<label for="fourth">
 					<div class="bookmark4">4 класс</div>
 				</label>
+
 				<label for="first">
 					<div class="first">
-				<label class="btn_exit_map" for="none">&times;</label>
-				<label for="birdGamePageButton">   
-				<div id="firstMapFirstStep" class="available marker"></div>
+                        <label class="btn_exit_map" for="none">&times;</label>
+                        <label for="birdGamePageButton">
+                            <div id="firstMapFirstStep" class="available marker"></div>
+                        </label>
+                        <label for="">
+                            <div id="firstMapSecondStep" class="unavailable marker"></div>
+                        </label>
+                        <label for="">
+                            <div id="firstMapThirdStep" class="unavailable marker"></div>
+                        </label>
+				    </div>
 				</label>
-				<label for="fishGamePageButton">
-				<div id="firstMapSecondStep" class="unavailable marker"></div>
-				</label>
-				<label for="spiderGamePageButton">
-				<div id="firstMapThirdStep" class="unavailable marker"></div>
-				</label>
-				</div>
-				</label>
+
 				<label for="second">
 					<div class="second">
-				<label class="btn_exit_map" for="none">
-				&times;
+                        <label class="btn_exit_map" for="none">&times;</label>
+                        <label for="spiderGamePageButton">
+                            <div id="secondMapFirstStep" class="available marker"></div>
+                        </label>
+                        <label for="">
+                            <div id="secondMapSecondStep" class="unavailable marker"></div>
+                        </label>
+                        <label for="">
+                            <div id="secondMapThirdStep" class="unavailable marker"></div>
+                        </label>
+				    </div>
 				</label>
-				<div class="one_second marker"></div>
-				<div class="two_second marker"></div>
-				<div class="three_second marker"></div>
-				</div>
-				</label>
-				<label for="third">
+
+                <label for="third">
 					<div class="third">
-				<label class="btn_exit_map" for="none">
-				&times;
+				        <label class="btn_exit_map" for="none">&times;</label>
+				        <div class="start_third marker"></div>
+				        <div class="number_third marker"></div>
+				        <div class="finish_third marker"></div>
+				    </div>
 				</label>
-				<div class="start_third marker"></div>
-				<div class="number_third marker"></div>
-				<div class="finish_third marker"></div>
-				</div>
-				</label>
+
 				<label for="fourth">
 					<div class="fourth">
-				<label class="btn_exit_map" for="none">
-				&times;
-				</label>
-				<div class="start_fourth marker"></div>
-				<div class="two_fourth marker"></div>
-				<div class="finish_fourth marker"></div>
-				</div>
+				        <label class="btn_exit_map" for="none">&times;</label>
+                        <div class="start_fourth marker"></div>
+                        <div class="two_fourth marker"></div>
+                        <div class="finish_fourth marker"></div>
+                    </div>
 				</label>
 			</div>
 		</div>
-		<div id="fishGamePage" class="sea_bottom">
+
+        <div id="fishGamePage" class="sea_bottom">
 			<label for="mainPageButton">
 				<div class="btn_exit_game">
 					&times;
@@ -125,6 +131,7 @@
 				<div></div>
 			</div>
 		</div>
+
 		<div id="birdGamePage" class="forest">
 			<label for="mainPageButton">
 				<div class="btn_exit_game">
@@ -157,6 +164,7 @@
 				<div></div>
 			</div>
 		</div>
+
 		<div id="spiderGamePage" class="room">
 			<label for="mainPageButton">
 				<div class="btn_exit_game">
@@ -189,6 +197,7 @@
 				<div></div>
 			</div>
 		</div>
+
 		<div id="infoPanelPage" class="info-panel">
 			<div class="btn_exit_game">
 				<label for="mainPageButton"> &times;</label>
@@ -219,9 +228,15 @@
 			<p>Сумма полученных баллов видна в белом левом нижнем поле.</p>
 			<p>Пример для выполнения&mdash;в среднем нижнем белом поле.</p>
 		</div>
+
 		<script type="text/javascript" src="assets/script/map.js"></script>
 		<script type="text/javascript" src="assets/script/game-common.js"></script>
-		<script type="text/javascript" src="assets/script/game-fish.data.js"></script>
+		<script type="text/javascript" src="assets/script/data/game-level-1.js"></script>
+        <script type="text/javascript" src="assets/script/data/game-level-2.js"></script>
+        <script type="text/javascript" src="assets/script/data/game-level-3.js"></script>
+        <script type="text/javascript" src="assets/script/data/game-level-4.js"></script>
+        <script type="text/javascript" src="assets/script/data/game-level-5.js"></script>
+        <script type="text/javascript" src="assets/script/data/game-level-6.js"></script>
 		<script type="text/javascript" src="assets/script/game-fish.js"></script>
 		<script type="text/javascript" src="assets/script/game-bird.js"></script>
 		<script type="text/javascript" src="assets/script/game-spider.js"></script>
