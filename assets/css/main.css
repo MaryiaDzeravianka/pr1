@@ -1,9 +1,5 @@
-body {
-    background-image: url(../img/fond/bg1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
+    
 .menu {
     left: 5vw;
     position: relative;
@@ -14,7 +10,7 @@ body {
 .stage {
     position: relative;
     width: 90vw;
-    height: 90vh;
+    height: 100vh;
 }
 
 input {
@@ -23,101 +19,37 @@ input {
 
 .first {
     background-image: url(../img/map/first.jpg);
-    transform: matrix(1.4, 0, 0.45, 1, 0, 270);
 }
 
 .second {
     background-image: url(../img/map/second.jpg);
-    transform: matrix(1.4, 0, 0.45, 1, 20, 200);
 }
 
 .third {
     background-image: url(../img/map/third.jpg);
-    transform: matrix(1.4, 0, 0.45, 1, 40, 130);
 }
 
 .fourth {
     background-image: url(../img/map/fourth.jpg);
-    transform: matrix(1.4, 0, 0.45, 1, 60, 60);
 }
 
-.fourth,
-.third,
-.second,
-.first {
-    transform-origin: 0 0;
-    position: absolute;
-    max-width: 1500px;
-    max-height: 1000px;
-    width: 42vw;
-    height: 28vw;
-    min-width: 300px;
-    min-height: 200px;
-    border: 1px solid black;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: gray;
-    top: 0vw;
-    left: 13vw;
-    margin: auto auto;
-    z-index: 1;
-    transition: transform 1s ease;
-}
-
-.bookmark1,
-.bookmark2,
-.bookmark3,
-.bookmark4 {
-    width: 300px;
-    font-size: 1.5vw;
-    vertical-align: baseline;
-    display: block;
-    padding: 5px 15px;
-    color: #fff;
-    background: #333;
-    text-decoration: none;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
-    /* Тень текста, чтобы приподнять его на немного */
-    border-radius: 8px;
-    font-weight: bold;
-    position: absolute;
-    top: 80px;
-    left: 5vw;
-}
-
-.bookmark4 {
-    top: 80px;
-}
-
-.bookmark3 {
-    top: 150px;
-}
-
-.bookmark2 {
-    top: 220px;
-}
-
-.bookmark1 {
-    top: 290px;
+.fourth:hover,
+.third:hover,
+.second:hover,
+.first:hover {
+    cursor: pointer;
 }
 
 .bookmark1:hover,
 .bookmark2:hover,
 .bookmark3:hover,
 .bookmark4:hover {
+    cursor: pointer;
     background: #6b0c36;
     background: rgba(107, 12, 54, 0.75);
     /* Выглядит полупрозрачным */
 }
 
-#first:checked~label div.first,
-#second:checked~label div.second,
-#third:checked~label div.third,
-#fourth:checked~label div.fourth {
-    transform: matrix(1.8, 0, 0, 1.8, 0, 0);
-    z-index: 3;
-    transition: transform 1s ease;
-}
 
 .btn_exit_map {
     font-family: fantasy;
@@ -127,7 +59,7 @@ input {
     left: 96%;
     display: none;
     color: #733397;
-    position: fixed;
+    position: absolute;
     top: 0.5%;
     width: 5%;
 }

@@ -1,5 +1,5 @@
 var gameDataLevel5 = [{
-        "primer": "2*1=?",
+        "primer": "2:1=?",
         "answers": [2, 3, 1, 4]
 },
     {

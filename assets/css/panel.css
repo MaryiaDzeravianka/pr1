@@ -1,16 +1,4 @@
-.info-panel {
-    margin: auto auto;
-    padding: 20px;
-    width: 60%;
-    font-size: 1.5vw;
-    font-family: Arial;
-    line-height: 120%;
-    text-indent: 0.5vw;
-    text-align: justify;
-    background-color: #E7DB68;
-    border-radius: 25px;
-    position: relative;
-}
+
 
 .info-panel p, .info-panel ol {
     margin-top: 0;

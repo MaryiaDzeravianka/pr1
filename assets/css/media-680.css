@@ -1,16 +1,58 @@
-@media only screen and (min-width: 680px) {
+@media only screen and (min-width: 768px) {
+body {
+    background-image: url(../img/fond/bg1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.stage {
+    position: relative;
+    width: 90vw;
+    height: 98vh;
+   
+}
+
+#nav{
+	float:left;
+	list-style:none;
+	font-weight:bold;
+	padding: 0px;	
+	margin-bottom:10px;
+}
+#nav>li a:first-child {
+	width: 300px;
+}
+#nav li a{
+	text-align: left;
+	font-size: 3vw;
+}
+.info-panel {
+    margin: auto auto;
+    padding: 20px;
+    width: 60%;
+    min-width: 85vw;
+        font-size: 2vw;
+    font-family: Arial;
+    line-height: 120%;
+    text-indent: 0.5vw;
+    text-align: justify;
+    background-color: #E7DB68;
+    border-radius: 25px;
+    position: relative;
+}
     .first {
-        transform: matrix(1.4, 0, 0.45, 1, 0, 270);
+        transform: matrix(1.4, 0, 0.45, 1, 0, 280);
     }
     .second {
-        transform: matrix(1.4, 0, 0.45, 1, 20, 200);
+        transform: matrix(1.4, 0, 0.45, 1, 20, 210);
     }
     .third {
-        transform: matrix(1.4, 0, 0.45, 1, 40, 130);
+        transform: matrix(1.4, 0, 0.45, 1, 40, 140);
     }
     .fourth {
-        transform: matrix(1.4, 0, 0.45, 1, 60, 60);
+        transform: matrix(1.4, 0, 0.45, 1, 60, 70);
     }
+    
     .fourth,
     .third,
     .second,
@@ -38,10 +80,10 @@
     .bookmark3,
     .bookmark4 {
         width: 300px;
-        font-size: 1.5vw;
+        font-size: 3vw;
         vertical-align: baseline;
         display: block;
-        padding: 5px 15px;
+        padding: 5px 5px;
         color: #fff;
         background: #333;
         text-decoration: none;
@@ -51,7 +93,7 @@
         font-weight: bold;
         position: absolute;
         top: 80px;
-        left: 5vw;
+        left: 1vw;
     }
     .bookmark4 {
         top: 80px;
@@ -65,4 +107,15 @@
     .bookmark1 {
         top: 290px;
     }
+    #first:checked~label div.first,
+    #second:checked~label div.second,
+    #third:checked~label div.third,
+    #fourth:checked~label div.fourth {
+       transform: matrix(2, 0, 0, 2.3, 0, 0);
+        z-index: 3;
+        transition: transform 1s ease;
+    }
+    
+   
 }
+

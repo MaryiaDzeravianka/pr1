@@ -1,25 +1,17 @@
 
-#nav{
+.nav{
 	float:left;
 	list-style:none;
 	font-weight:bold;
 	padding: 0px;	
 	margin-bottom:10px;
 }
-#nav>li a:first-child {
-	width: 300px;
-    
+
+.nav li{
+	margin-left: -4vw;
 }
-#nav li{
-	float:left;
-	margin-right:10px;
-	position:relative;
-	display:block;
-	
-	}
-#nav li a{
+.nav li a{
 	text-align: left;
-	font-size: 1.5vw;
 	vertical-align: baseline;
 	display:block;
 	padding:5px;
@@ -28,9 +20,9 @@
 	text-decoration:none;
 	text-shadow:1px 1px 1px rgba(0,0,0,0.75); /* Тень текста, чтобы приподнять его на немного */
     border-radius:8px;
-	padding-left: 19px;
+	padding-left: 5px;
 }
-#nav li a:hover{
+.nav li a:hover{
 	color:#fff;
 	background:#6b0c36;
 	background:rgba(107,12,54,0.75);/* Выглядит полупрозрачным */

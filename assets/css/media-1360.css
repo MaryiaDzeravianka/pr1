@@ -1,0 +1,22 @@
+     @media only screen and (min-width: 1360px) {
+     #first:checked~label div.first,
+     #second:checked~label div.second,
+     #third:checked~label div.third,
+     #fourth:checked~label div.fourth {
+         transform: matrix(1.8, 0, 0, 1.73, 0, 0);
+     }
+     .bookmark1,
+     .bookmark2,
+     .bookmark3,
+     .bookmark4 {
+         width: 20vw;
+         font-size: 1.6vw;
+     }
+     #nav li a {
+         font-size: 1.6vw;
+     }
+     .info-panel {
+         min-width: 85vw;
+         font-size: 1.6vw;
+     }
+ 
