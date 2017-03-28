@@ -14,7 +14,9 @@ var dev = true;
 gulp.task('styles', () => {
   return gulp.src('app/styles/*.css')
     .pipe($.if(dev, $.sourcemaps.init()))
-    .pipe($.autoprefixer({browsers: ['> 1%', 'last 2 versions', 'Firefox ESR']}))
+    .pipe($.autoprefixer({browsers: ['last 6 versions'],
+            cascade: false}))
+    .pipe(gulp.dest('.tmp/styles'))
     .pipe($.if(dev, $.sourcemaps.write()))
     .pipe(gulp.dest('.tmp/styles'))
     .pipe(reload({stream: true}));
@@ -29,6 +31,8 @@ gulp.task('scripts', () => {
     .pipe(gulp.dest('.tmp/scripts'))
     .pipe(reload({stream: true}));
 });
+
+
 
 function lint(files) {
   return gulp.src(files)
