@@ -7,12 +7,14 @@
         top: 0px;
         left: -15px;
     }
-    .nav> div:first-child {
+    #nav>li a:first-child {
         width: 25vw;
         font-size: 5vw;
         text-decoration: none;
     }
-    
+    #nav li {
+        margin-left: 0vw;
+    }
     .stage {
         position: relative;
         width: 95vw;
