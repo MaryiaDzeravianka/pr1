@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Школа Онлайн</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css" type="text/css" />
+    <link rel="stylesheet" href="styles/menu.css" type="text/css" />
+    <link rel="stylesheet" href="styles/map1.css" type="text/css" />
+    <link rel="stylesheet" href="styles/map2.css" type="text/css" />
+    <link rel="stylesheet" href="styles/map3.css" type="text/css" />
+    <link rel="stylesheet" href="styles/map4.css" type="text/css" />
+    <link rel="stylesheet" href="styles/map-common.css" type="text/css" />
+    <link rel="stylesheet" href="styles/game-fish.css" type="text/css" />
+    <link rel="stylesheet" href="styles/game-birds.css" type="text/css" />
+    <link rel="stylesheet" href="styles/game-spiders.css" type="text/css" />
+    <link rel="stylesheet" href="styles/game-test.css" type="text/css" />
+    <link rel="stylesheet" href="styles/game-common.css" type="text/css" />
+    <link rel="stylesheet" href="styles/panel.css" type="text/css" />
+    <link rel="stylesheet" href="styles/media-480.css" type="text/css" />
+    <link rel="stylesheet" href="styles/media-680.css" type="text/css" />
+    <link rel="stylesheet" href="styles/media-1020.css" type="text/css" />
+    <link rel="stylesheet" href="styles/media-1260.css" type="text/css" />
+    <link rel="stylesheet" href="styles/media-1360.css" type="text/css" />
+    <!-- endbuild -->
+
+</head>
+
+<body>
+    <input id="mainPageButton" type="radio" name="pages" checked>
+    <input id="birdGamePageButton" type="radio" name="pages">
+    <input id="fishGamePageButton" type="radio" name="pages">
+    <input id="spiderGamePageButton" type="radio" name="pages">
+    <input id="testGamePageButton" type="radio" name="pages">
+    <input id="infoPanelPageButton" type="radio" name="pages">
+
+    <div id="mainPage" class="container">
+        <div class="menu">
+            <ul id="nav">
+				<li>
+					<a href="#"><label for="infoPanelPageButton">Об игре</label> </a>
+				</li>
+			</ul>
+
+        </div>
+        <div class="stage">
+            <input id="first" type="radio" name="map ">
+            <input id="second" type="radio" name="map ">
+            <input id="third" type="radio" name="map ">
+            <input id="fourth" type="radio" name="map ">
+            <input id="none" type="radio" name="map ">
+
+            <label for="first">
+                <div class="bookmark1">1 класс</div>
+            </label>
+            <label for="second">
+                <div class="bookmark2">2 класс</div>
+            </label>
+            <label for="third">
+                <div class="bookmark3">3 класс</div>
+            </label>
+            <label for="fourth">
+                <div class="bookmark4">4 класс</div>
+            </label>
+
+            <label for="first">
+                <div class="first">
+                    <label class="btn_exit_map" for="none">&times;</label>
+            <label for="birdGamePageButton">
+                        <div id="firstMapFirstStep" class="available marker"></div>
+                    </label>
+            <label for="">
+                        <div id="firstMapSecondStep" class="unavailable marker"></div>
+                    </label>
+            <label for="">
+                        <div id="firstMapThirdStep" class="unavailable marker"></div>
+                    </label>
+        </div>
+        </label>
+
+        <label for="second">
+                <div class="second">
+                    <label class="btn_exit_map" for="none">&times;</label>
+        <label for="spiderGamePageButton">
+                        <div id="secondMapFirstStep" class="available marker"></div>
+                    </label>
+        <label for="">
+                        <div id="secondMapSecondStep" class="unavailable marker"></div>
+                    </label>
+        <label for="">
+                        <div id="secondMapThirdStep" class="unavailable marker"></div>
+                    </label>
+    </div>
+    </label>
+
+    <label for="third">
+                <div class="third">
+                    <label class="btn_exit_map" for="none">&times;</label>
+    <label for="testGamePageButton">
+                        <div id="thirdMapFirstStep" class="available marker"></div>
+                    </label>
+    <label for="">
+                        <div id="thirdMapSecondStep" class="unavailable marker"></div>
+                    </label>
+    <label for="">
+                        <div id="thirdMapThirdStep" class="unavailable marker"></div>
+                    </label>
+    </div>
+    </label>
+
+    <label for="fourth">
+                <div class="fourth">
+                    <label class="btn_exit_map" for="none">&times;</label>
+    <label for="testGamePageButton">
+                        <div id="fourthMapFirstStep" class="available marker"></div>
+                    </label>
+    <label for="">
+                        <div id="fourthMapSecondStep" class="unavailable marker"></div>
+                    </label>
+    <label for="">
+                        <div id="fourthMapThirdStep" class="unavailable marker"></div>
+                    </label>
+    </div>
+    </label>
+    </div>
+    </div>
+    <div id="fishGamePage" class="sea_bottom">
+        <label for="mainPageButton">
+            <div class="btn_exit_game">
+                &times;
+            </div>
+        </label>
+        <div class="fish1" id="fish1">
+            <div></div>
+            <div></div>
+        </div>
+        <div class="fish2" id="fish2">
+            <div></div>
+            <div></div>
+        </div>
+        <div class="fish3" id="fish3">
+            <div></div>
+            <div></div>
+        </div>
+        <div class="fish4" id="fish4">
+            <div></div>
+            <div></div>
+        </div>
+        <div class="total_points">
+            <div></div>
+        </div>
+        <div class="current_task">
+            <div></div>
+        </div>
+        <div class="round_points">
+            <div></div>
+        </div>
+    </div>
+    <div id="birdGamePage" class="forest">
+        <label for="mainPageButton">
+            <div class="btn_exit_game">
+                &times;
+            </div>
+        </label>
+        <div class="bird1" id="bird1">
+            <div></div>
+            <div></div>
+        </div>
+        <div class="bird2" id="bird2">
+            <div></div>
+            <div></div>
+        </div>
+        <div class="bird3" id="bird3">
+            <div></div>
+            <div></div>
+        </div>
+        <div class="bird4" id="bird4">
+            <div></div>
+            <div></div>
+        </div>
+        <div class="total_points">
+            <div></div>
+        </div>
+        <div class="current_task">
+            <div></div>
+        </div>
+        <div class="round_points">
+            <div></div>
+        </div>
+    </div>
+    <div id="spiderGamePage" class="room">
+        <label for="mainPageButton">
+            <div class="btn_exit_game">
+                &times;
+            </div>
+        </label>
+        <div class="spider1" id="spider1">
+            <div></div>
+            <div></div>
+        </div>
+        <div class="spider2" id="spider2">
+            <div></div>
+            <div></div>
+        </div>
+        <div class="spider3" id="spider3">
+            <div></div>
+            <div></div>
+        </div>
+        <div class="spider4" id="spider4">
+            <div></div>
+            <div></div>
+        </div>
+        <div class="total_points">
+            <div></div>
+        </div>
+        <div class="current_task">
+            <div></div>
+        </div>
+        <div class="round_points">
+            <div></div>
+        </div>
+    </div>
+    <div id="testGamePage">
+        <label for="mainPageButton">
+            <div class="btn_exit_game">
+                &times;
+            </div>
+        </label>
+        <div class="current_task">
+            <div></div>
+        </div>
+        <div id="option1">
+            <div></div>
+            <div></div>
+        </div>
+        <div id="option2">
+            <div></div>
+            <div></div>
+        </div>
+        <div id="option3">
+            <div></div>
+            <div></div>
+        </div>
+        <div id="option4">
+            <div></div>
+            <div></div>
+        </div>
+        <div class="total_points">
+            <div></div>
+        </div>
+        <div class="round_points">
+            <div></div>
+        </div>
+    </div>
+    <div id="infoPanelPage" class="info-panel">
+        <div class="btn_exit_panel">
+            <label for="mainPageButton"> &times;</label>
+        </div>
+        <p>Так же, как спортсмен тренирует мышцы многократным повторением упражнений и регулярными тренировками, так же нужно тренировать свой мозг.</p>
+        <p>Регулярно работая с тренажером по математике, ваш ребенок начнет считать быстрее и правильнее.</p>
+        <h4>Как приступить к игре?</h4>
+        <ol>
+            <li>
+                Выбираем нужный класс. Каждому классу соответсвует своя карта.
+            </li>
+            <li>
+                Выбрав соответствующую классу карту (щелкнув по закладке), мы можем приступить к выполнению заданий.
+            </li>
+            <li>
+                Выполнение начинаем с фиолетовой фишки (щелкнув по ней).
+            </li>
+            <li>
+                Открывается игра-тренажер.
+            </li>
+            <li>
+                Выполняем задания.
+            </li>
+        </ol>
+        <h4>Подсчет баллов</h4>
+        <p>За правильный ответ с первой попытки вы получаете 5 баллов, со второй &mdash; 3 балла, с третьей &mdash; 1 балл, с четвертой &mdash; вычитается один балл.</p>
+        <p>Количество возможных к получению баллов можно видеть в белом павом нижнем поле.</p>
+        <p>Сумма полученных баллов видна в белом левом нижнем поле.</p>
+        <p>Пример для выполнения &mdash; в среднем нижнем белом поле.</p>
+    </div>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/main.js -->
+    <script type="text/javascript" src="scripts/map.js"></script>
+    <script type="text/javascript" src="scripts/game-common.js"></script>
+    <script type="text/javascript" src="scripts/data/game-level-1.js"></script>
+    <script type="text/javascript" src="scripts/data/game-level-2.js"></script>
+    <script type="text/javascript" src="scripts/data/game-level-3.js"></script>
+    <script type="text/javascript" src="scripts/data/game-level-4.js"></script>
+    <script type="text/javascript" src="scripts/data/game-level-5.js"></script>
+    <script type="text/javascript" src="scripts/data/game-level-6.js"></script>
+    <script type="text/javascript" src="scripts/data/game-level-7.js"></script>
+    <script type="text/javascript" src="scripts/data/game-level-8.js"></script>
+    <script type="text/javascript" src="scripts/data/game-level-9.js"></script>
+    <script type="text/javascript" src="scripts/data/game-level-10.js"></script>
+    <script type="text/javascript" src="scripts/data/game-level-11.js"></script>
+    <script type="text/javascript" src="scripts/data/game-level-12.js"></script>
+    <script type="text/javascript" src="scripts/game-fish.js"></script>
+    <script type="text/javascript" src="scripts/game-bird.js"></script>
+    <script type="text/javascript" src="scripts/game-spider.js"></script>
+    <script type="text/javascript" src="scripts/game-test.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>

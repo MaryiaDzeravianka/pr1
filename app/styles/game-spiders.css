@@ -1,0 +1,117 @@
+.room {
+    /*display: none;*/
+    position: relative;
+    margin: 2vw auto auto auto;
+    width: 70vw;
+    height: 45vw;
+    background-image: url(../images/gamespider/room.jpg);
+    background-size: cover;
+}
+
+.spider1,
+.spider2,
+.spider3,
+.spider4 {
+    position: relative;
+    display: inline-block;
+    width: 16%;
+    height: 100%;
+}
+
+.spider1:hover,
+.spider2:hover,
+.spider3:hover,
+.spider4:hover {
+    cursor: pointer;
+}
+
+.spider1 {
+    left: 2%;
+}
+
+.spider2 {
+    left: 9%;
+}
+
+.spider3 {
+    left: 19%;
+}
+
+.spider4 {
+    left: 32%;
+}
+
+
+.spider1 div:nth-of-type(1) {
+    position: absolute;
+    animation: vertical-move 12s linear infinite;
+    width: 9vw;
+    height: 9vw;
+    background-image: url(../images/gamespider/spider1.png);
+    background-size: cover;
+}
+
+.spider2 div:nth-of-type(1) {
+    position: absolute;
+    animation: vertical-move-back 12s linear 0.1s infinite;
+    width: 9vw;
+    height: 9vw;
+    background-image: url(../images/gamespider/spider2.png);
+    background-size: cover;
+}
+
+.spider3 div:nth-of-type(1) {
+    position: absolute;
+    animation: vertical-move 12s linear 0.05s infinite;
+    width: 9vw;
+    height: 9vw;
+    background-image: url(../images/gamespider/spider3.png);
+    background-size: cover;
+}
+
+.spider4 div:nth-of-type(1) {
+    position: absolute;
+    animation: vertical-move-back 12s linear infinite;
+    width: 9vw;
+    height: 9vw;
+    background-image: url(../images/gamespider/spider4.png);
+    background-size: cover;
+}
+
+.spider1 div:nth-of-type(2) {
+    animation: vertical-move 12s linear infinite;
+    padding-top: 31%;
+    left: -10%;
+}
+
+.spider2 div:nth-of-type(2) {
+    animation: vertical-move-back 12s linear infinite;
+    padding-top: 35%;
+    left: -11%;
+}
+
+.spider3 div:nth-of-type(2) {
+    animation: vertical-move 12s linear infinite;
+    padding-top: 38%;
+    left: -8%;
+}
+
+.spider4 div:nth-of-type(2) {
+    animation: vertical-move-back 12s linear infinite;
+    padding-top: 35%;
+    left: -10%;
+}
+
+.spider1 div:nth-of-type(2),
+.spider2 div:nth-of-type(2),
+.spider3 div:nth-of-type(2),
+.spider4 div:nth-of-type(2) {
+    color: white;
+    position: relative;
+    height: 18%;
+    font-size: 3vw;
+    font-weight: bold;
+    word-spacing: -0.5vw;
+    text-align: center;
+    
+}
