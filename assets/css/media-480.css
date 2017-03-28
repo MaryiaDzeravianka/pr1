@@ -1,0 +1,77 @@
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+
+.fourth,
+.third,
+.second,
+.first {
+    max-width: 1500px;
+    max-height: 1000px;
+    width: 42vw;
+    height: 28vw;
+    min-width: 300px;
+    min-height: 200px;
+    border: 1px solid black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: gray;
+    margin: auto auto;
+}
+
+.bookmark1,
+.bookmark2,
+.bookmark3,
+.bookmark4 {
+    width: 300px;
+    font-size: 3vw;
+    vertical-align: baseline;
+    display: block;
+    padding: 5px 15px;
+    color: #fff;
+    background: #333;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
+    border-radius: 8px;
+    font-weight: bold;
+    position: absolute;
+    left: 5vw;
+}
+
+.bookmark4 {
+    top: 80px;
+}
+
+.bookmark3 {
+    top: 150px;
+}
+
+.bookmark2 {
+    top: 220px;
+}
+
+.bookmark1 {
+    top: 290px;
+}
+
+
+
+.first {
+    background-image: url(../img/map/first.jpg);
+}
+
+.second {
+    background-image: url(../img/map/second.jpg);
+}
+
+.third {
+    background-image: url(../img/map/third.jpg);
+}
+
+.fourth {
+    background-image: url(../img/map/fourth.jpg);
+}
+
+
+
+
+
+}

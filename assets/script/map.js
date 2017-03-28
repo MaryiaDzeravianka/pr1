@@ -5,16 +5,22 @@ var mapState = {
 
     "secondMapFirstStep": true,
     "secondMapSecondStep": false,
-    "secondMapThirdStep": false
-
+    "secondMapThirdStep": false,
+    
+    "thirdMapFirstStep": true,
+    "thirdMapSecondStep": false,
+    "thirdMapThirdStep": false,
+    
+    "fourthMapFirstStep": true,
+    "fourthMapSecondStep": false,
+    "fourthMapThirdStep": false
 };
 
 var currentStep;
 var nextStep;
 var nextStepLabel;
 
-
-firstMapFirstStep.onclick = function () {
+firstMapFirstStep.onclick = function() {
     if (mapState[this.id]) {
         currentStep = this;
         nextStep = firstMapSecondStep;
@@ -24,7 +30,7 @@ firstMapFirstStep.onclick = function () {
     }
 };
 
-firstMapSecondStep.onclick = function () {
+firstMapSecondStep.onclick = function() {
     if (mapState[this.id]) {
         currentStep = this;
         nextStep = firstMapThirdStep;
@@ -34,7 +40,7 @@ firstMapSecondStep.onclick = function () {
     }
 };
 
-firstMapThirdStep.onclick = function () {
+firstMapThirdStep.onclick = function() {
     if (mapState[this.id]) {
         currentStep = this;
         nextStep = secondMapFirstStep;
@@ -44,7 +50,7 @@ firstMapThirdStep.onclick = function () {
     }
 };
 
-secondMapFirstStep.onclick = function () {
+secondMapFirstStep.onclick = function() {
     if (mapState[this.id]) {
         currentStep = this;
         nextStep = secondMapSecondStep;
@@ -54,7 +60,7 @@ secondMapFirstStep.onclick = function () {
     }
 };
 
-secondMapSecondStep.onclick = function () {
+secondMapSecondStep.onclick = function() {
     if (mapState[this.id]) {
         currentStep = this;
         nextStep = secondMapThirdStep;
@@ -64,35 +70,73 @@ secondMapSecondStep.onclick = function () {
     }
 };
 
-secondMapThirdStep.onclick = function () {
+secondMapThirdStep.onclick = function() {
     if (mapState[this.id]) {
         currentStep = this;
-        nextStep = secondMapFirstStep;
-        nextStepLabel = "";
+        nextStep = thirdMapFirstStep;
+        nextStepLabel = "test";
 
         initBirdGame(gameDataLevel6);
     }
 };
 
-/*
 thirdMapFirstStep.onclick = function() {
-    initBirdGame();
+    if (mapState[this.id]) {
+        currentStep = this;
+        nextStep = thirdMapSecondStep;
+        nextStepLabel = "test";
+
+        initTestGame(gameDataLevel7);
+    }
 };
 
 thirdMapSecondStep.onclick = function() {
-    initSpiderGame();
+    if (mapState[this.id]) {
+        currentStep = this;
+        nextStep = thirdMapThirdStep;
+        nextStepLabel = "test";
+
+        initTestGame(gameDataLevel8);
+    }
 };
 
 thirdMapThirdStep.onclick = function() {
+    if (mapState[this.id]) {
+        currentStep = this;
+        nextStep = fourthMapFirstStep;
+        nextStepLabel = "test";
+
+        initTestGame(gameDataLevel9);
+    }
 };
 
 
 fourthMapFirstStep.onclick = function() {
+    if (mapState[this.id]) {
+        currentStep = this;
+        nextStep = fourthMapSecondStep;
+        nextStepLabel = "test";
+
+        initTestGame(gameDataLevel10);
+    }
 };
 
 fourthMapSecondStep.onclick = function() {
+    if (mapState[this.id]) {
+        currentStep = this;
+        nextStep = fourthMapThirdStep;
+        nextStepLabel = "test";
+
+        initTestGame(gameDataLevel11);
+    }
 };
 
 fourthMapThirdStep.onclick = function() {
+    if (mapState[this.id]) {
+        currentStep = this;
+        nextStep = thirdMapSecondStep;
+        nextStepLabel = "";
+
+        initTestGame(gameDataLevel12);
+    }
 };
-*/

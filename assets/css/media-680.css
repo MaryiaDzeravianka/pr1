@@ -1,0 +1,68 @@
+@media only screen and (min-width: 680px) {
+    .first {
+        transform: matrix(1.4, 0, 0.45, 1, 0, 270);
+    }
+    .second {
+        transform: matrix(1.4, 0, 0.45, 1, 20, 200);
+    }
+    .third {
+        transform: matrix(1.4, 0, 0.45, 1, 40, 130);
+    }
+    .fourth {
+        transform: matrix(1.4, 0, 0.45, 1, 60, 60);
+    }
+    .fourth,
+    .third,
+    .second,
+    .first {
+        transform-origin: 0 0;
+        position: absolute;
+        max-width: 1500px;
+        max-height: 1000px;
+        width: 42vw;
+        height: 28vw;
+        min-width: 300px;
+        min-height: 200px;
+        border: 1px solid black;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: gray;
+        top: 0vw;
+        left: 13vw;
+        margin: auto auto;
+        z-index: 1;
+        transition: transform 1s ease;
+    }
+    .bookmark1,
+    .bookmark2,
+    .bookmark3,
+    .bookmark4 {
+        width: 300px;
+        font-size: 1.5vw;
+        vertical-align: baseline;
+        display: block;
+        padding: 5px 15px;
+        color: #fff;
+        background: #333;
+        text-decoration: none;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
+        /* Тень текста, чтобы приподнять его на немного */
+        border-radius: 8px;
+        font-weight: bold;
+        position: absolute;
+        top: 80px;
+        left: 5vw;
+    }
+    .bookmark4 {
+        top: 80px;
+    }
+    .bookmark3 {
+        top: 150px;
+    }
+    .bookmark2 {
+        top: 220px;
+    }
+    .bookmark1 {
+        top: 290px;
+    }
+}

@@ -5,17 +5,17 @@
     position: absolute;
 }
 
-#second:checked~label #secondMapFirstStep {
+#fourth:checked~label #fourthMapFirstStep {
     top: 77%;
-    left: 34%;
+    left: 33%;
 }
 
-#second:checked~label #secondMapSecondStep {
-    top: 21%;
-    left: 65.5%;
+#fourth:checked~label #fourthMapSecondStep {
+    top: 44%;
+    left: 79.5%;
 }
 
-#second:checked~label #secondMapThirdStep {
-    top: 48%;
-    left: 81%;
+#fourth:checked~label #fourthMapThirdStep {
+    top: 67%;
+    left: 84%;
 }

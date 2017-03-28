@@ -2,17 +2,36 @@
     margin: auto auto;
     padding: 20px;
     width: 60%;
-    font-size: 24px;
+    font-size: 1.5vw;
     font-family: Arial;
     line-height: 120%;
-    text-indent: 20px;
+    text-indent: 0.5vw;
     text-align: justify;
-    background-color: grey;
+    background-color: #E7DB68;
     border-radius: 25px;
+    position: relative;
 }
 
 .info-panel p, .info-panel ol {
     margin-top: 0;
     margin-bottom: 0;
     
+}
+
+.btn_exit_panel{
+    font-family: fantasy;
+    color: #fff;
+    position: relative;
+    font-weight: bold;
+    font-size: 4vw;
+    color: white;
+    cursor: pointer;
+    width: 5%;
+    left: 96%;
+}
+
+.btn_exit_panel:hover {
+     color: red;
+     cursor: pointer;
+   
 }
